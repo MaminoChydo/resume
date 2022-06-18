@@ -7,87 +7,117 @@
   <meta name="keywords" content="резюме, работа, поиск, крутой сайт, resume, arseniy, jn">
   <meta name="description" content="Это сайт - резюме Арсения Пядухова, юного джуна, который хочет найти работу">
   <title>Arsenuy Resume</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="imgs/zPGnz-bOEy4.jpg" alt="" width="400">
-
-  <h1>Арсений Пядухов</h1>
   
-  <p>Бросил уник, чтобы стать програмистом. </p>
+  <div class="container">
+    <header class="header">
+      <img class="avatar" src="imgs/zPGnz-bOEy4.jpg" alt="">
+      <div class="info-text">
+        <h1>Арсений Пядухов</h1>
+      
+        <p class="intro">Хочу стать програмистом </p>
+      
+        <p>Учу <strong> html, css и javasript </strong>, <em>хочу найти работу разработчиком</em>.</p>
+      
+        <p>Люблю програмировать, мечтаю стать разработчиком и работать во <strong> frotnede</strong></p>
+      
 
-  <p>Учу <strong> html, css и javasript </strong>, <em>хочу найти работу разработчиком</em>.</p>
+      
+        <h4>Список основных социальных сетей:</h4>
+    
+        <a href="https://vk.com/dead_emo_punk_girl" target="_blank">Vk</a> |
+        <a href="https://t.me/MaminoChydo" target="_blank"> Telegram</a> |
+        <a href="https://github.com/MaminoChydo" target="_blank">Github</a>
+      </div>
+    </header>
 
-  <p>Люблю програмировать, мечтаю стать разработчиком и работать во <strong> frotnede</strong></p>
+    <section class="section">
+    
+      
+      <div class="card bg-green hobbies">
+        <h2>Мои хобби:</h2>
+        <ol class="list">
+          <li>Програмирование</li>
+          <li>Аниме</li>
+          <li>Манга</li>
+          <li>Компьютерные игры</li>
+          <li>Бег</li>
+        </ol>
+      </div>
+    
+      <div class="card bg-red work">
+        <h2>Опыт работы:</h2>
+    
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <td>Ростелеком</td>
+              <td>Продавец</td>
+              <td>2019-2020</td>
+            </tr>
+            <tr>
+              <td>Фриланс</td>
+              <td>Верстальщик</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Фриланс</td>
+              <td>Frontend разработчик</td>
+              <td>2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  <h4>Список основных социальных сетей:</h4>
-
-  <a href="https://vk.com/dead_emo_punk_girl" target="_blank">Vk</a> |
-  <a href="https://t.me/MaminoChydo" target="_blank"> Telegram</a> |
-  <a href="https://github.com/MaminoChydo" target="_blank">Github</a>
-
-  <h2>Мои хобби:</h2>
-  <ol>
-    <li>Програмирование</li>
-    <li>Аниме</li>
-    <li>Манга</li>
-    <li>Компьютерные игры</li>
-    <li>Бег</li>
-  </ol>
-
-  <h2>Опыт работы:</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Ростелеком</td>
-        <td>Продавец</td>
-        <td>2019-2020</td>
-      </tr>
-      <tr>
-        <td>Фриланс</td>
-        <td>Верстальщик</td>
-        <td>2021</td>
-      </tr>
-      <tr>
-        <td>Фриланс</td>
-        <td>Frontend разработчик</td>
-        <td>2022</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Связаться со мной</h2>
-
-  <form action="">
-
-    <div>
-      <label for="name">Ваше имя:</label>
-      <input type="text" placeholder="Введите имя:" id="name">
+    <div class="card bg-yellow">
+      <h2>Мои работы</h2>
+      <ul class="link-list">
+        <li><a href="maminochydo.github.io/waifu-gallery/" target="_blank">Сайт waifu gallery</a></li>
+        <li><a href="maminochydo.github.io/resume/" target="_blank">Сайт resume</a></li>
+      </ul>
     </div>
 
-    <div>
-      <label for="">Ваш email:</label>
-      <input type="email" placeholder="Введите email:" id="email" >
-    </div>
+    <footer class="footer">
 
-    <div>
-      <label for="message">Ваше Сообщение:</label>
-      <br>
-      <textarea name="message" placeholder="Ваше сообщение..." id="message" cols="25" rows="5" ></textarea>
-    </div>
+      <form action="" class="form">
+        <h2>Связаться со мной</h2>
 
-    <div>
-      <button type="submit">Отправить!</button>
-    </div>
+        <div class="form-row">
 
-  </form>
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" placeholder="Введите имя:" id="name">
+          </div>
+
+          <div class="form-group">
+            <label for="">Ваш email:</label>
+            <input type="email" placeholder="Введите email:" id="email" >
+          </div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше Сообщение:</label>
+          <textarea name="message" placeholder="Ваше сообщение..." id="message" cols="25" rows="5" ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button class="btn" type="submit">Отправить!</button>
+        </div>
+
+      </form>
+    </footer>
+  </div>
   
 </body>
 </html>
